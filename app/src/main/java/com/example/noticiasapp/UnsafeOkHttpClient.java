@@ -8,6 +8,7 @@ import okhttp3.OkHttpClient;
 
 // Esta clase crea un cliente HTTP que confía en todos los certificados SSL.
 // Útil para desarrollo cuando el servidor tiene un certificado autofirmado.
+// ADVERTENCIA: NO USAR EN PRODUCCIÓN DEBIDO A RIESGOS DE SEGURIDAD.
 public class UnsafeOkHttpClient {
 
     public static OkHttpClient getUnsafeOkHttpClient() {
